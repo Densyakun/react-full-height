@@ -1,4 +1,3 @@
-// @ts-ignore
 import ReactFullHeight from "../lib"
 import "./App.css"
 

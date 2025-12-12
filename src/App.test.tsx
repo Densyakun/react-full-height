@@ -4,5 +4,5 @@ import App from "./App";
 
 it("renders without crashing", () => {
   render(<App />);
-  expect(screen.getByText("Vite")).toBeInTheDocument();
+  expect(screen.getByText("React FullHeight")).toBeInTheDocument();
 });

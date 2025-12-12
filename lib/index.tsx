@@ -12,16 +12,20 @@ const MAX_BREAKPOINT = 1000000;
 /*
  * Component definitions
  */
-const Wrapper = styled.section`
+const Wrapper = styled.section<{
+  $startWidth?: number;
+  $endWidth?: number;
+  $canExceed?: boolean;
+}>`
   box-sizing: border-box;
   overflow: auto;
 
-  ${({ startWidth, endWidth }) =>
+  ${({ $startWidth, $endWidth }) =>
     `@media screen and (min-width: ${getResulutionValue(
-      startWidth,
+      $startWidth,
       MIN_BREAKPOINT
-    )}) and (max-width: ${getResulutionValue(endWidth, MAX_BREAKPOINT)})`} {
-    ${({ canExceed }) => (canExceed ? "min-height" : "height")}: 100vh;
+    )}) and (max-width: ${getResulutionValue($endWidth, MAX_BREAKPOINT)})`} {
+    ${({ $canExceed }) => ($canExceed ? "min-height" : "height")}: 100vh;
   }
 `;
 
@@ -32,12 +36,18 @@ const ReactFullheight = ({
   endWidth,
   canExceed,
   ...otherProps
-}) => (
+}: {
+  children?: React.ReactNode;
+  className?: string;
+  startWidth?: number;
+  endWidth?: number;
+  canExceed?: boolean;
+} & React.ComponentPropsWithoutRef<'section'>) => (
   <Wrapper
-    startWidth={startWidth}
-    endWidth={endWidth}
     className={className}
-    canExceed={canExceed}
+    $startWidth={startWidth}
+    $endWidth={endWidth}
+    $canExceed={canExceed}
     {...otherProps}
   >
     {children}

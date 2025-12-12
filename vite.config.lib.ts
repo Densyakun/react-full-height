@@ -15,5 +15,13 @@ export default defineConfig({
       name: 'ReactFullHeight',
       fileName: 'index'
     },
+    rollupOptions: {
+      external: ["react"],
+      output: {
+        globals: {
+          react: "React",
+        },
+      },
+    },
   },
 })
