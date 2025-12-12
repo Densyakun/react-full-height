@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/qmixi/react-full-height">
-    <img src="static/icon.png" alt="Logo" width="100" height="100">
+    <img src="public/icon.png" alt="Logo" width="100" height="100">
   </a>
 
   <h2 align="center">React Full Height</h2>

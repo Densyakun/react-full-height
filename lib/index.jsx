@@ -1,7 +1,3 @@
-/*
- * External imports
- */
-import React from "react";
 import { oneOfType, node, arrayOf, string, number, bool } from "prop-types";
 import styled from "styled-components";
 

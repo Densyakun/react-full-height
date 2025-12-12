@@ -1,0 +1,60 @@
+.App-header {
+  background: linear-gradient(45deg, #ef4f03, #2f35ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.App-header-responsive {
+  background: linear-gradient(45deg, #6803ef, #2fcbff);
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+
+.App-header-exceed {
+  background: linear-gradient(45deg, #fbcb42, #bc1d1d);
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+
+.App-header-cantexceed {
+  background: linear-gradient(45deg, #fb4286, #1dbcbc);
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+  text-align: center;
+}
+
+.App-text {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fork-wr img {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  border: 0;
+}
