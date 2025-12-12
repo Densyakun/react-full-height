@@ -1,5 +1,5 @@
 {
-  "name": "react-full-height",
+  "name": "@densyakun/react-full-height",
   "version": "1.2.4",
   "description": "React component to make your container view port height",
   "main": "./dist/lib/index.umd.js",
@@ -29,6 +29,10 @@
     "test": "jest"
   },
   "author": "qmixi",
+  "contributors": [
+    "qmixi",
+    "Densyakun <densyakun1128@gmail.com> (https://github.com/Densyakun)"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qmixi/react-full-height.git"
